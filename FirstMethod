@@ -1,0 +1,61 @@
+package method;
+
+public class myFirstMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 20;
+		String name = "Aimel";
+		
+		System.out.println("I have a message for you");
+		showMessage();
+		System.out.println("That's all folk");
+		showMessage2();
+		System.out.println("That's all buddies!");
+		showMessage3(i);
+		showMessage4(i,name);
+		showMessage5(21, "Single");
+	}//mainmethod
+	
+	//public static - modifier
+	// void - result type
+	//show message - method name
+	//() - parameter
+	public static void showMessage() {
+		System.out.println("Hello world");
+	}//showMessagebnmethod
+	
+	public static void showMessage2() {
+		System.out.println("Hello Malaysia");
+	}
+		
+	public static void showMessage3(int j) {
+		System.out.println("The number is "+ j);
+	}
+	
+	public static void showMessage4(int m, String n) {
+		int p = 4;
+		
+		System.out.println("The number is "+m);
+		System.out.println("My name is "+ n);
+		int sum = m+p;
+		System.out.println("Sum is "+ sum);
+	}
+	
+	public static void showMessage5 (int age, String k) {
+		System.out.println("My age is "+ age +" "+ k);
+	}
+	
+
+}
+OUTPUT
+I have a message for you
+Hello world
+That's all folk
+Hello Malaysia
+That's all buddies!
+The number is 20
+The number is 20
+My name is Aimel
+Sum is 24
+My age is 21 Single
