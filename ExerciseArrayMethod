@@ -1,0 +1,71 @@
+package method;
+
+import java.util.Scanner;
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Array List");
+		displayLine();	
+	}
+	
+	public static void displayLine() {
+		int sum, totsum ;
+		
+		int[ ][ ] x = {
+						{2,3,1},
+					    {15,25,13},
+						{20,4,7},
+					  };
+		for (int m=0; m<x.length; m++) {
+			
+			for(int n=0; n<x.length; n++) {
+				System.out.println(x[m][n]);
+			}
+		}
+		displaySumaarray(x);
+	}
+	public static void displaySumaarray(int x[][]) {
+		int sum=0;
+		int totsum=0;
+		for(int a=0; a<x.length; a++) {
+			
+			sum=0;
+			for(int b=0; b<x.length; b++) { 
+				System.out.println(x[a][b]);
+				sum = sum + x[a][b];
+			}
+
+		totsum=totsum+sum;
+		//System.out.println("Sum :" + sum);
+		System.out.println("TotalSum : "+ totsum);
+		}
+	}
+
+}
+
+OUTPUT
+Array List
+2
+3
+1
+15
+25
+13
+20
+4
+7
+2
+3
+1
+TotalSum : 6
+15
+25
+13
+TotalSum : 59
+20
+4
+7
+TotalSum : 90
+
